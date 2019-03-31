@@ -1,5 +1,5 @@
 # Bounding Box Regression with Uncertainty for Accurate Object Detection
-CVPR 2019
+**CVPR 2019**
 
 [Yihui He](http://yihui-he.github.io/), [Chenchen Zhu](https://sites.google.com/andrew.cmu.edu/zcckernel), [Jianren Wang](https://scholar.google.com/citations?user=NL8MDkwAAAAJ&hl=en), [Marios Savvides](http://www.cmu-biometrics.org), [Xiangyu Zhang](https://scholar.google.com/citations?user=yuB-cfoAAAAJ&hl=en&oi=ao), Carnegie Mellon University & Megvii Inc.
 
@@ -28,8 +28,7 @@ When installing cocoapi, please use [my fork](https://github.com/yihui-he/cocoap
 ### Testing
 Inference without Var Voting (8 GPUs):
 ```
-python2 tools/test_net.py \
-    --cfg configs/e2e_faster_rcnn_R-50-FPN_2x.yaml
+python2 tools/test_net.py -c configs/e2e_faster_rcnn_R-50-FPN_2x.yaml
 ```
 You will get:
 ```
@@ -54,9 +53,7 @@ You will get:
 ```
 Inference with Var Voting:
 ```
-python2 tools/test_net.py \
-    --cfg configs/e2e_faster_rcnn_R-50-FPN_2x.yaml \
-    STD_NMS True
+python2 tools/test_net.py -c configs/e2e_faster_rcnn_R-50-FPN_2x.yaml STD_NMS True
 ```
 You will get:
 ```
@@ -82,12 +79,11 @@ You will get:
 
 ### Training
 ```
-python2 tools/train_net.py \
-    --cfg configs/e2e_faster_rcnn_R-50-FPN_2x.yaml
+python2 tools/train_net.py -c configs/e2e_faster_rcnn_R-50-FPN_2x.yaml
 ```
 
 ### FAQ
-Please create a [new issue](https://github.com/yihui-he/softer-NMS/issues/new).
+Please create a [new issue](https://github.com/yihui-he/KL-Loss/issues/new).
 
 -------------------------------------------
 
