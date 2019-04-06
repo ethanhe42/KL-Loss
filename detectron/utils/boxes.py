@@ -167,7 +167,7 @@ def bbox_transform(boxes, deltas, weights=(1.0, 1.0, 1.0, 1.0)):
         xyxy
     """
     if cfg.XYXY:
-	return bbox_transform_xyxy(boxes, deltas, weights)
+        return bbox_transform_xyxy(boxes, deltas, weights)
     if boxes.shape[0] == 0:
         return np.zeros((0, deltas.shape[1]), dtype=deltas.dtype)
 
@@ -257,7 +257,7 @@ def bbox_std_transform_xyxy(boxes, bbox_epsilon, describ=False):
     else:
         bbox_std = 1. / bbox_epsilon**.5
     if describ:
-	import pandas as pd
+        import pandas as pd
         print((pd.DataFrame(bbox_std.flatten()).describe()))
     boxes = boxes.astype(bbox_std.dtype, copy=False)
     widths = boxes[:, 2::4] - boxes[:, 0::4] + 1.0
@@ -304,7 +304,7 @@ def bbox_transform_inv(boxes, gt_boxes, weights=(1.0, 1.0, 1.0, 1.0)):
 	gt_boxes: [x1 y1 x2 y2]
     """
     if cfg.XYXY:
-	return bbox_transform_inv_xyxy(boxes, gt_boxes, weights)
+        return bbox_transform_inv_xyxy(boxes, gt_boxes, weights)
     ex_widths = boxes[:, 2] - boxes[:, 0] + 1.0
     ex_heights = boxes[:, 3] - boxes[:, 1] + 1.0
     ex_ctr_x = boxes[:, 0] + 0.5 * ex_widths
