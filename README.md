@@ -12,14 +12,14 @@ Large-scale object detection datasets (e.g., MS-COCO) try to define the ground t
 ### Citation
 If you find the code useful in your research, please consider citing:
 
-    @inproceedings{klloss,
-      title={Bounding Box Regression with Uncertainty for Accurate Object Detection},
-      author={He, Yihui and Zhu, Chenchen and Wang, Jianren and Savvides, Marios and Zhang, Xiangyu },
-      booktitle={2019 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-      year={2019},
-      organization={IEEE}
+    @InProceedings{klloss,
+      author = {He, Yihui and Zhu, Chenchen and Wang, Jianren and Savvides, Marios and Zhang, Xiangyu},
+      title = {Bounding Box Regression With Uncertainty for Accurate Object Detection},
+      booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+      month = {June},
+      year = {2019}
     }
-
+    
 ### Installation  
 Please find installation instructions for Caffe2 and Detectron in [`INSTALL.md`](INSTALL.md).
 
