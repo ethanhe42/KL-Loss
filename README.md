@@ -1,5 +1,5 @@
 # Bounding Box Regression with Uncertainty for Accurate Object Detection
-**CVPR 2019**
+**CVPR 2019**  [[presentation (youtube)]](https://www.youtube.com/watch?v=bcGtNdTzdkc)
 
 [Yihui He](http://yihui-he.github.io/), [Chenchen Zhu](https://sites.google.com/andrew.cmu.edu/zcckernel), [Jianren Wang](https://scholar.google.com/citations?user=NL8MDkwAAAAJ&hl=en), [Marios Savvides](http://www.cmu-biometrics.org), [Xiangyu Zhang](https://scholar.google.com/citations?user=yuB-cfoAAAAJ&hl=en&oi=ao), Carnegie Mellon University & Megvii Inc.
 
