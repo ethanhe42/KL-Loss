@@ -91,7 +91,7 @@ python2 tools/train_net.py -c configs/e2e_faster_rcnn_R-50-FPN_2x.yaml
 ```
 
 ### PyTorch re-implementations
-[Stronger-yolo-pytorch](https://github.com/wlguan/Stronger-yolo-pytorch): yolov3 + KL-loss
+[Stronger-yolo-pytorch](https://github.com/yihui-he/Stronger-yolo-pytorch): yolov3 + KL-loss
 
 ### FAQ
 Please create a [new issue](https://github.com/yihui-he/KL-Loss/issues/new).
